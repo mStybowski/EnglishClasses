@@ -1,0 +1,9 @@
+<%- include("./partials/header.ejs")%>
+<div class="container">
+    <form action="/register" method="POST" class="standalone-form login-form" >
+        <input type="text" name="username" placeholder="Nazwa użytkownika">
+        <input type="password" name="password" placeholder="Hasło">
+        <input type="submit" value="Rejestracja">
+    </form>
+</div>
+<%- include("./partials/footer.ejs")%>

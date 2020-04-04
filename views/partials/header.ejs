@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/stylesheet/style.css" rel="stylesheet" type="text/css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Yelp Camp</title>
+</head>
+<body>
+<div class="topbar">
+    <nav>
+
+        <a  href="/" class="brand-topbar">
+            <img src="/images/logo.svg" class="logo-topbar">
+            <span>English Class</span>
+        </a>
+
+
+        <div class="options">
+
+        <ul class="navigation">
+            <% if(currentUser && currentUser.type != "student"){%>
+            <li><a href="/sheets">Sheets</a></li>
+            <li><a href="/sheets/new">Add new</a></li>
+            <li><a href="/help">Help</a></li>
+                <%}%>
+        </ul>
+
+        <ul class="AuthBar">
+            <% if(currentUser){%>
+                <li><a href="/profile">Signed in as <span><%= currentUser.username%></span></a></li>
+                <li><a href="/logout">Logout</a></li>
+            <%}else{%>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">SignUp</a></li>
+            <%}%>
+        </ul>
+        </div>
+    </nav>
+</div>
+<div class="container">
+    <div class="flashContainer" >
+        <% if(error && error.length>0){%>
+        <div class="alert alert-danger" role="alert">
+            <%=error%>
+        </div>
+        <%}%>
+        <% if(success && success.length>0){%>
+        <div class="alert alert-success" role="alert">
+            <%=success%>
+        </div>
+        <%}%>
+
+    </div>
+</div>

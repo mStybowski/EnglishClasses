@@ -1,0 +1,18 @@
+<%- include("../partials/header.ejs")%>
+<div class="container">
+    <div class="grid-container">
+
+        <%sheets.forEach(function(sheet){ %>
+            <div class="post">
+                <h4><%= sheet.title%></h4>
+                <h4>Ilosc zadan:<%= sheet.tasks.length%></h4>
+                <a href="/sheets/<%=sheet._id%>">Wejdź</a>
+
+            </div>
+        <%});%>
+
+
+
+</div>
+
+<%- include("../partials/footer.ejs")%>
