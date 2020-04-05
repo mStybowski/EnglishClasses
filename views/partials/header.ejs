@@ -25,19 +25,20 @@
 
         <ul class="navigation">
             <% if(currentUser && currentUser.type != "student"){%>
-            <li><a href="/sheets">Sheets</a></li>
-            <li><a href="/sheets/new">Add new</a></li>
-            <li><a href="/help">Help</a></li>
-                <%}%>
+                <li><a href="/sheets">Karty</a></li>
+                <li><a href="/sheets/new">Nowa karta</a></li>
+                <li><a href="/tasks/new">Nowe zadanie</a></li>
+                <li><a href="/help">Pomoc</a></li>
+            <%}%>
         </ul>
 
         <ul class="AuthBar">
             <% if(currentUser){%>
-                <li><a href="/profile">Signed in as <span><%= currentUser.username%></span></a></li>
-                <li><a href="/logout">Logout</a></li>
+                <li><a href="/profile">Zalogowano jako <span><%= currentUser.username%></span></a></li>
+                <li><a href="/logout">Wyloguj</a></li>
             <%}else{%>
                 <li><a href="/login">Login</a></li>
-                <li><a href="/register">SignUp</a></li>
+                <li><a href="/register">Register</a></li>
             <%}%>
         </ul>
         </div>
@@ -46,12 +47,12 @@
 <div class="container">
     <div class="flashContainer" >
         <% if(error && error.length>0){%>
-        <div class="alert alert-danger" role="alert">
+        <div class="error-flash" role="alert">
             <%=error%>
         </div>
         <%}%>
         <% if(success && success.length>0){%>
-        <div class="alert alert-success" role="alert">
+        <div class="success-flash" role="alert">
             <%=success%>
         </div>
         <%}%>

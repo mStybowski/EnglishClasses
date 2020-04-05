@@ -7,11 +7,13 @@ var express     = require("express"),
     expressSanitizer = require("express-sanitizer"),
     User            = require("./models/user");
 
+
 var methodOverride = require("method-override");
 var flash = require("connect-flash");
 
 var indexRoutes = require("./routes/index");
 var sheetsRoutes = require("./routes/sheets");
+var tasksRoutes = require("./routes/tasks");
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -57,7 +59,7 @@ db.once('open', function() {
 
 app.use("/", indexRoutes);
 app.use("/sheets", sheetsRoutes);
-
+app.use("/tasks", tasksRoutes);
 app.listen(8080, infoFunct());
 
 function infoFunct(){

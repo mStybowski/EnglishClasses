@@ -5,9 +5,13 @@ var middlewareObj = {};
 
 middlewareObj.redirectIfLogged = function(req, res, next){
     if(req.isAuthenticated()) {
-        res.redirect("/index");
+        res.redirect("/sheets");
+    }
+    else{
+        next();
     }
 };
+
 
 // middlewareObj.checkCommentOwner = function(req, res, next){
 //

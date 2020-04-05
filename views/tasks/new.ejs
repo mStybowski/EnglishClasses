@@ -1,12 +1,11 @@
 <%- include("../partials/header.ejs")%>
 <div class="container">
     <h2>Add a new sheet</h2>
-    <form action="/sheets" method="POST" class="standalone-form">
+    <form action="/tasks" method="POST" class="standalone-form">
         <input type="text" name="title" placeholder="Nazwa">
         <input type="text" name="description" placeholder="Opis">
 
-        <input type="submit" formaction="/sheets/draft" value="Zapisz jako szkic">
-        <input type="submit" formaction="/sheets/addtasks" value="Dodaj zadania">
+        <input type="submit" value="Zapisz jako szkic">
 
     </form>
 </div>

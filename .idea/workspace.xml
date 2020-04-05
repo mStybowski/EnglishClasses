@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a50b6852-2c7d-43c9-803f-9d7b37958064" name="Default Changelist" comment="" />
+    <list default="true" id="a50b6852-2c7d-43c9-803f-9d7b37958064" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/abcTask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/sheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheet/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheet/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/sheets.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/sheets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sheets/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sheets/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sheets/sheets.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sheets/sheets.ejs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZgUQd1LhBnrr7nc21xgjwXird2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +42,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -45,6 +63,8 @@
       <workItem from="1585910266649" duration="19166000" />
       <workItem from="1585948630459" duration="1793000" />
       <workItem from="1585990259864" duration="16051000" />
+      <workItem from="1586018451057" duration="3770000" />
+      <workItem from="1586078653184" duration="6763000" />
     </task>
     <servers />
   </component>

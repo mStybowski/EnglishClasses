@@ -7,6 +7,11 @@
                 <h4><%= sheet.title%></h4>
                 <h4>Ilosc zadan:<%= sheet.tasks.length%></h4>
                 <a href="/sheets/<%=sheet._id%>">Wejdź</a>
+                <%if(!sheet.shared){%>
+                    <span>Private</span>
+                    <%} else{%>
+                    <span>Shared</span>
+                <%}%>
 
             </div>
         <%});%>

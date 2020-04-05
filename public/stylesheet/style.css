@@ -26,7 +26,7 @@ p{
     width: 100%;
     background-color: #272727;
     padding: 9px 0;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
 }
@@ -75,7 +75,10 @@ a{
     align-self: flex-end;
 }
 
+
+
 .grid-container{
+    margin: 15px 0;
     display: grid;
     justify-content: center;
     grid-template-columns: 300px 300px 300px;/*Make the grid smaller than the container*/
@@ -211,4 +214,22 @@ li img{
 
 .standalone-form input[type=submit]:active{
     background-color: #46b75c;
+}
+
+.flashContainer{
+    align-self: center;
+}
+
+.success-flash{
+    background-color: rgba(70, 183, 92, 0.27);
+    border: 2px solid rgba(70, 183, 92, 0.64);
+    padding: 4px 40px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    align-self: center;
+    text-align: center;
+    color: #185f3d;
+    text-transform: uppercase;
+    font-size: 12px;
+
 }

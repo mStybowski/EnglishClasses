@@ -5,7 +5,7 @@ var User = require("../models/user");
 
 var router = express.Router();
 
-router.get("/",(req, res)=>{
+router.get("/", middlewareObj.redirectIfLogged, (req, res)=>{
     //tutaj middleware, jeśli zalogowano to przekierować do /sheets
     res.render("index");
 });
