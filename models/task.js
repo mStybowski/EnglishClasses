@@ -3,6 +3,17 @@ var mongoose = require("mongoose");
 var taskSchema = new mongoose.Schema({
     type: String,
     instruction: String,
+    description: String,
+    points: String,
+    img: String,
+    url: String,
+    author: {
+        id: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User"
+        },
+        username: String
+    },
     questions: [
         {
             text: String

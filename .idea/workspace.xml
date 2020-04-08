@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a50b6852-2c7d-43c9-803f-9d7b37958064" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/abcTask.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/sheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/sheet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheet/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheet/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/sheets.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/sheets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/sheets/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sheets/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sheets/sheets.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sheets/sheets.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sheets/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sheets/show.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks/edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/tasks/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/tasks/tasks.ejs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +67,38 @@
       <workItem from="1585948630459" duration="1793000" />
       <workItem from="1585990259864" duration="16051000" />
       <workItem from="1586018451057" duration="3770000" />
-      <workItem from="1586078653184" duration="6763000" />
+      <workItem from="1586078653184" duration="7215000" />
+      <workItem from="1586089538801" duration="318000" />
+      <workItem from="1586089875250" duration="5727000" />
+      <workItem from="1586099750444" duration="2999000" />
+      <workItem from="1586168192866" duration="1929000" />
+      <workItem from="1586175022078" duration="5401000" />
+      <workItem from="1586188049649" duration="781000" />
+      <workItem from="1586196474269" duration="732000" />
+      <workItem from="1586254127537" duration="6953000" />
+      <workItem from="1586269212950" duration="8581000" />
+      <workItem from="1586289267204" duration="3518000" />
+      <workItem from="1586296803852" duration="1864000" />
+      <workItem from="1586337150606" duration="4972000" />
+      <workItem from="1586345111979" duration="2664000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1053" y="100" width="774" height="847" key="DiffContextDialog" timestamp="1586345337791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1053" y="100" width="774" height="847" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586345337791" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1586186476567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586186476567" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586196668670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586196668670" />
   </component>
 </project>

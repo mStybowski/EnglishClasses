@@ -1,0 +1,61 @@
+<%- include("./partials/header.ejs")%>
+<%var sheets = user.sheets%>
+<%var taskers = user.tasks%>
+
+<div class="container">
+
+    <div class="profile"> 
+        <div class="profile-header">
+            <div class="profile-username"><%=user.username%></div>
+            <div class="profile-type"><%=user.type%></div>
+        </div>
+        <div class="profile-content">
+            <div class="profile-sheets grid-container-profile-sheets">
+                <%sheets.forEach(function(sheet){ %>
+
+                    <div class="grid-sheet-item">
+                        <%if(sheet.shared){%>
+                                <div class="topbar-sheet-card-online topbar-sheet-card">
+                                    ONLINE
+                                </div>
+                        <%}else{%>
+                                <div class="topbar-sheet-card-draft topbar-sheet-card">
+                                    DRAFT
+                                </div>
+                        <%}%>
+                        <div class="info-card-sheet">
+                            <h3><%= sheet.title%></h3>
+                            <h5><%= sheet.description%></h5>
+                            <h4>Liczba zadań: <%= sheet.tasks.length%></h4>
+                        </div>
+                        <div class="bottom-sheet-card">
+                            <button> Show students</button>
+                            <div class="buttons-card-sheet">
+
+                                <a href="/sheets/<%=sheet._id%>">Podgląd</a>
+                                <a href="/sheets/<%=sheet._id%>/edit">Edytuj</a>
+<!--                                <a href="/sheets/<%=sheet._id%>/delete"><i class="far fa-trash-alt"></i></a>-->
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                <%});%>
+            </div>
+            <div class="profile-tasks grid-container-profile-tasks">
+                <%taskers.forEach(function(task){ %>
+                    <div class="grid-task-item">
+                        <div class="task-type"><%= task.type%></div>
+                        <div class="task-description"><%= task.description%></div>
+                        <a href="/tasks/<%=task._id%>/edit" >Edytuj Zadanie</a>
+                        <a href="/tasks/<%=task._id%>/delete" >Usuń zadanie</a>
+                        <a href="/tasks/<%=task._id%>/addtosheet" >Dodaj do karty</a>
+                    </div>
+                <%});%>
+            </div>
+        </div>
+    </div>
+
+</div>
+<%- include("./partials/footer.ejs")%>

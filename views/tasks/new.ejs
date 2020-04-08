@@ -1,12 +1,22 @@
 <%- include("../partials/header.ejs")%>
 <div class="container">
-    <h2>Add a new sheet</h2>
-    <form action="/tasks" method="POST" class="standalone-form">
-        <input type="text" name="title" placeholder="Nazwa">
-        <input type="text" name="description" placeholder="Opis">
 
-        <input type="submit" value="Zapisz jako szkic">
+
+    <form method="POST" class="standalone-form">
+
+        <h2>Nowe zadanie</h2>
+
+                <input type="text" name="type" placeholder="Typ">
+                <input type="text" name="points" placeholder="Maksymana liczba punktów">
+                <input type="text" name="description" placeholder="Opis">
+                <input type="text" name="img" placeholder="Obrazek">
+
+                <input type="submit" formaction="/tasks/draft" value="Zapisz jako szkic">
+                <input type="submit" formaction="/tasks/addtosheet" value="Dodaj do karty pracy">
+
+
 
     </form>
 </div>
+<script src="/javascript/scripts.js"></script>
 <%- include("../partials/footer.ejs")%>

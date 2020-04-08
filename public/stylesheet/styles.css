@@ -1,0 +1,359 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+body{
+    background-color: #f8f8f8;
+}
+p{
+    text-align: justify;
+}
+.hero{
+    position: relative;
+    justify-content: center;
+    min-height: 800px;
+    color: #fff;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 6px 6px 6px -5px rgba(0,0,0,0.61);
+}
+
+
+.topbar{
+
+    width: 100%;
+    background-color: #272727;
+    padding: 9px 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.brand-topbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.brand-topbar span{
+    color: #c4c4c4;
+}
+
+.brand-topbar span:hover{
+    color: #ededed;
+}
+
+.logo-topbar{
+    width: 22px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+}
+
+.options{
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+.grid-container{
+    margin: 15px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;/*Make the grid smaller than the container*/
+    grid-gap: 12px;
+
+}
+
+.grid-container > div {
+    background-color: #272727;
+    color: #b1b1b1;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 6px 6px 6px -5px rgba(0,0,0,0.61);
+}
+
+.grid-container div a {
+    color: #2997ff;
+
+}
+
+.grid-container div a:hover {
+    text-decoration: underline;
+}
+nav{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul a {
+    color: #b5b5b5;
+
+}
+
+ul a:hover {
+    color: #efefef;
+
+}
+ul.navigation li{
+
+    margin-right: 40px;
+
+}
+
+ul.AuthBar a{
+    text-transform: capitalize;
+
+    color: #858585;
+}
+
+ul.AuthBar a:hover{
+
+    color: #b1b1b1;
+}
+
+.AuthBar li:first-child{
+    margin-right: 22px;
+}
+
+li img{
+    width: 40px;
+}
+@media (max-width: 1150px) {
+    .grid-container{
+        grid-template-columns: 267px 267px 267px; /*Make the grid smaller than the container*/
+    }
+}
+@media (max-width: 850px) {
+    .grid-container{
+        grid-template-columns: 250px 250px; /*Make the grid smaller than the container*/
+    }
+}
+@media (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 80%; /*Make the grid smaller than the container*/
+    }
+}
+
+@media (max-width: 900px) {
+    .brand-topbar span{
+        display: none;
+    }
+    .brand-topbar {
+        width: 40px;
+    }
+
+}
+/*FORMS*/
+.standalone-form{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px 80px;
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+}
+
+.standalone-form input, select{
+    margin: 6px 0;
+    height: 36px;
+    width: 200px;
+    padding: 4px 15px;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    background-color: #ffffff;
+}
+.standalone-form input, select {
+    outline: none;
+}
+
+.standalone-form input[type=submit]{
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #54da70;
+    font-weight: bold;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.standalone-form input[type=submit]:active{
+    background-color: #46b75c;
+}
+
+/*Dropdown input*/
+
+.flashContainer{
+    align-self: center;
+}
+
+.success-flash{
+    background-color: rgba(70, 183, 92, 0.27);
+    border: 2px solid rgba(70, 183, 92, 0.64);
+    padding: 4px 40px;
+    margin: 15px 0;
+    border-radius: 5px;
+    align-self: center;
+    text-align: center;
+    color: #185f3d;
+    text-transform: uppercase;
+
+}
+
+/*profile*/
+/*TEACHER*/
+.profile {
+background-color: white;
+}
+.profile-content{
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 0 0 18px 18px;
+}
+
+.profile-header{
+    background-color: #272727;
+    padding: 8px 0;
+    color: #cccccc;
+}
+
+.profile-username{
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.profile-type{
+    font-size: 1em;
+    text-align: center;
+    color: #cc6633;
+    font-weight: 900;
+    line-height: 1;
+}
+.profile-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+.grid-container-profile-sheets{
+    display: grid;
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+    grid-template-columns: auto auto;
+    
+    color: #cccccc;
+}
+.grid-sheet-item{
+    background-color: #333333;
+    border-radius: 8px;
+    width: 400px;
+}
+.deleteIcon{
+    width: 16px;
+}
+.info-card-sheet{
+    padding: 20px 30px;
+}
+.grid-container-profile-tasks{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto;
+    margin-left: 20px;
+}
+.grid-task-item{
+    background-color: #cccccc;
+    padding: 10px 20px;
+    max-width: 200px;
+}
+
+.info-card-sheet > *{
+padding: 5px 0;
+}
+.topbar-sheet-card{
+    padding: 3px 18px;
+    text-align: right;
+    border-radius: 8px 8px 0 0;
+    font-size: 0.9em;
+}
+
+.topbar-sheet-card-online{
+    background-color: #1cadab;
+    color: #333333;
+}
+
+.topbar-sheet-card-draft{
+    background-color: #ad592e;
+
+}
+
+.buttons-card-sheet a{
+    border: 2px solid #cccccc;
+    border-radius: 4px;
+    color: #cccccc;
+    padding: 2px 16px;
+
+}
+
+
+
+.bottom-sheet-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 30px;
+    margin-bottom: 20px;
+}
+
+.bottom-sheet-card button{
+   background-color: rgba(255, 255, 255, 0);
+    border: none;
+    text-decoration: underline;
+    color: #cccccc;
+    cursor: pointer;
+    outline: none;
+
+}
+
+/*wybor taska*/
+.grid-container-tasks{
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: auto auto;
+    margin-left: 20px;
+}
+
+.grid-task-item-form{
+    background-color: #cccccc;
+    padding: 10px 20px;
+    width: 500px;
+}

@@ -1,0 +1,17 @@
+<%- include("../partials/header.ejs")%>
+<% tasks = user.tasks%>
+<div class="container">
+    <h2>Dodaj zadanie do sheeta</h2>
+    <div class="grid-container-tasks">
+        <%tasks.forEach(function(task){ %>
+            <div class="grid-task-item-form">
+                <div class="task-type"><%= task.type%></div>
+                <div class="task-description"><%= task.description%></div>
+                <a href="/tasks/<%=task._id%>/edit" >Edytuj Zadanie</a>
+                <a href="/tasks/<%=task._id%>/delete" >Usuń zadanie</a>
+                <a href="/tasks/<%=task._id%>/addtosheet" >Dodaj do karty</a>
+            </div>
+        <%});%>
+    </div>
+</div>
+<%- include("../partials/footer.ejs")%>

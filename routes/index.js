@@ -34,7 +34,7 @@ router.post(
     });
 
 router.post("/register", function(req, res){
-    var newUser = new User({username: req.body.username, type: "student"});
+    var newUser = new User({username: req.body.username, type: "Teacher"});
     User.register(newUser, req.body.password, function(err, user){
         if(err){
             req.flash("error", err);
@@ -44,6 +44,27 @@ router.post("/register", function(req, res){
             res.redirect("/sheets");
         });
     });
+});
+
+router.get("/profile/:id", function(req, res){
+    User.findById(req.params.id).populate("sheets").populate("tasks").exec( function(err, foundUser){
+        if(err || !foundUser)
+        {
+            req.flash("error", "User not found");
+            res.redirect("/sheets");
+        }
+        else{
+            if(foundUser.type === "student") //tutaj mozna przekazywac bezposrednio typ a nie string hardcoded
+                res.render("student", {user: foundUser});
+
+            else
+                res.render("teacher", {user: foundUser});
+            }
+
+
+
+    });
+
 });
 
 router.get("/register",(req, res)=>{

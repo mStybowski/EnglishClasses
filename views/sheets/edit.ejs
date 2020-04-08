@@ -1,0 +1,12 @@
+<%- include("../partials/header.ejs")%>
+<div class="container">
+    <h2>Add a new sheet</h2>
+    <form action="/sheets/<%=sheet._id%>/?_method=PUT" method="POST" class="standalone-form">
+        <input type="text" name="sheet[title]" value="<%= sheet.title%>">
+        <input type="text" name="sheet[description]" value="<%= sheet.description%>">
+
+        <input type="submit" value="Zapisz">
+
+    </form>
+</div>
+<%- include("../partials/footer.ejs")%>

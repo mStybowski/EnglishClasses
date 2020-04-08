@@ -1,0 +1,19 @@
+<%- include("../partials/header.ejs")%>
+<div class="container">
+    <h2>Edytuj zadanie typu: <%=task.type%></h2>
+
+    <form method="POST" class="standalone-form">
+
+
+        <input type="text" name="task[type]" placeholder="Typ" value="<%=task.type%>">
+        <input type="text" name="task[points]" placeholder="Maksymana liczba punktów" value="<%=task.points%>">
+        <input type="text" name="task[description]" placeholder="Opis" value="<%=task.description%>">
+        <input type="text" name="task[img]" placeholder="Obrazek" value="<%=task.img%>">
+
+        <input type="submit" formaction="/tasks/<%=task._id%>/?_method=PUT" value="Aktualizuj">
+<!--        <input type="submit" formaction="/tasks/addtosheet" value="Dodaj do karty pracy">-->
+
+    </form>
+</div>
+
+<%- include("../partials/footer.ejs")%>
